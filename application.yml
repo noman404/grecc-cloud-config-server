@@ -9,3 +9,13 @@ eureka:
     register-with-eureka: true
     service-url:
       defaultZone: http://localhost:8585/eureka/
+      
+      
+keycloak:
+  auth-server-url: http://localhost:8180/auth
+  realm: CFG-GRECC-REALM
+  resource: cfg-grecc-auth-client
+  public-client: false
+  bearer-only: false
+  credentials:
+    secret: f40d9252-68b6-458d-a73a-f40f5327e093 
